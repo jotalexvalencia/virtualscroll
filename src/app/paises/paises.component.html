@@ -3,6 +3,6 @@
 
 <ul class="list-group" cdkDropList (cdkDropListDropped)="drop($event)">
     <li class="list-group-item" *ngFor="let pais of paises" cdkDrag>
-        <img [src]='pais.flag' [alt]='pais.name' [title]='pais.name' width="50" height="50" tooltip> {{ pais.name }}
+        <img [src]='pais.flag' [alt]='pais.name' [title]='pais.name' width="50" height="50" tooltip> {{ pais.name }} {{ pais.capital }}
     </li>
 </ul>
